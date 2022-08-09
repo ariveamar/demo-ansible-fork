@@ -67,9 +67,9 @@
     state: latest
 #  when: "'install_rsyslog' in remediation_task"
 
-#- name: Ensure all security software and packages are updated/installed
-#  yum:
-#    name: '*'
-#    security: yes
-#    state: latest
+- name: Ensure all security software and packages are updated/installed
+  yum:
+    name: '*'
+    security: yes
+    state: latest
 #  when: "'install_security_updates' in remediation_task"
